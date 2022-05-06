@@ -1,0 +1,18 @@
+<div>
+    <h1>Ejemplo ngular Zone</h1>
+    <p>Proceso de incremento se puede ejecutar dentro/fuera de angular zone</p>
+    <p>Implicando que los cambios del progreso se vean o no hasta que se indique</p>
+
+    <div>
+        <h3>Progreso actual: {{progress}}%</h3>
+        <h4 *ngIf="progress >= 100">Progreso terminado: {{text}} DE ANGULAR ZONE</h4>
+    </div>
+
+    <div>
+        <button (click)="aumentarDetroNgZone()">Aumentar DENTRO DE ANGULAR ZONE</button>
+    </div>
+
+    <div>
+        <button (click)="aumentarFueraNgZone()">Aumentar FUERA DE ANGULAR ZONE</button>
+    </div>
+</div>
