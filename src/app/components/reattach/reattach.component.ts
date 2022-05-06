@@ -38,7 +38,7 @@ export class ReattachComponent implements OnInit {
   //   }
   // }
   set enVivo(valor: boolean) {
-    console.log({valor})
+    // console.log({valor})
     this.mostrarEnVivo = valor;
     if (valor) {
       this.ref.reattach(); // Reacoplamos el TS y HTML para ver los cambios en vivo
